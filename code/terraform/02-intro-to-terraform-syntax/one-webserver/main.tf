@@ -10,7 +10,7 @@ terraform {
 }
 
 provider "aws" {
-  region = "us-east-2"
+  region = "us-east-1"
 }
 
 resource "aws_instance" "example" {
@@ -28,6 +28,7 @@ resource "aws_instance" "example" {
 
   tags = {
     Name = "terraform-example"
+    Book = "terraform-up-and-running"
   }
 }
 
